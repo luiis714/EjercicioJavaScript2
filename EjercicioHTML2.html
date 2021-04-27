@@ -14,17 +14,27 @@
             <fieldset title="DATOS PERSONALES">
                 <legend>DATOS PERSONALES</legend>
                 <div class="conjunto" id="conj_personales">
-                    <div class="col-20">
-                        <div>Nombre</div>
-                        <div>Primer Apellido</div>
-                        <div>Segundo Apellido</div>
-                        <div>Fecha de nacimiento</div>
+                    <div class="col-50-left">
+                        <div class="col-20">
+                            <div>Nombre</div>
+                            <div>Primer Apellido</div>
+                            <div>Segundo Apellido</div>
+                            <div>Fecha de nacimiento</div>
+                        </div>
+                        <div class="col-80">
+                            <div><input type="text" name="nombre"/></div>
+                            <div><input type="text" name="primer_apellido"/></div>
+                            <div><input type="text" name="segundo_apellido"/></div>
+                            <div><select required name="days"></select><select required name="months"></select><select required name="years"></select></div>
+                        </div>
                     </div>
-                    <div class="col-80">
-                        <div><input type="text" name="nombre"/></div>
-                        <div><input type="text" name="primer_apellido"/></div>
-                        <div><input type="text" name="segundo_apellido"/></div>
-                        <div><select required name="days"></select><select required name="months"></select><select required name="years"></select></div>
+                    <div class="col-50-right">
+                        <div class="col-20">
+                            <div>DNI</div>
+                        </div>
+                        <div class="col-80">
+                            <div><input type="text" id="num_dni"/><input type="text" id="letra_dni"/></div>
+                        </div>
                     </div>
                 </div>
             </fieldset>
