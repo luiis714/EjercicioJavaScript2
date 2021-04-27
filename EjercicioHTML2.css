@@ -1,0 +1,77 @@
+body{
+    font-family: Calibri;
+}
+
+h1{
+    font-family: Segoe UI, Segoe, Optima, Candara, Calibri,Arial, sans-serif;
+    font-size: 3em;
+    letter-spacing: 0.3em;
+    word-spacing: 1.0em;
+    color:#B72304;
+    text-align: center;
+}
+
+h2{
+    font-family: Segoe UI, Segoe, Optima, Candara, Calibri,Arial, sans-serif;
+    text-align: center;
+}
+
+fieldset{
+    border-color: darkblue;
+    border-width: 3px;
+    border-radius: 24px;
+}
+
+legend{
+    color:orange;
+    font-weight: bold;
+}
+
+
+.col-20{
+    float: left;
+    width: 20%;
+    line-height: 25px;
+}
+
+.col-80{
+    float: right;
+    width: 80%;
+    line-height: 25px;
+}
+
+.col-50-left{
+    float: left;
+    width: 50%;
+    line-height: 35px;
+}
+
+.col-50-right{
+    float: right;
+    width: 50%;
+    line-height: 35px;
+}
+
+#info_privacidad{
+    text-align: center;
+}
+
+#botones{
+    text-align: center;
+}
+
+input, select{
+    border-width: 1px;
+}
+
+input:focus-within, select:focus-within{
+    background-color: #FEF9E7;
+}
+
+input:hover, select:hover{
+    border-width: 2px;
+}
+
+input[type="submit"], input[type="reset"]{
+    height: 30px;
+}
