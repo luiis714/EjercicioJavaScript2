@@ -21,11 +21,24 @@
                             <div>Segundo Apellido</div>
                             <div>Fecha de nacimiento</div>
                         </div>
+                        
                         <div class="col-80">
                             <div><input type="text" name="nombre"/></div>
                             <div><input type="text" name="primer_apellido"/></div>
                             <div><input type="text" name="segundo_apellido"/></div>
-                            <div><select required name="days"></select><select required name="months"></select><select required name="years"></select></div>
+                            <div>
+                                <select required name="days">
+                                    <option> </option>
+                                    <option> </option>
+                                </select>
+                                <select required name="months">
+                                        <option> </option>
+                                        <option> </option>
+                                </select>
+                                <select required name="years" onclick="rellenaCamposFecha()">
+                                    <option> </option>
+                                    <option> </option>
+                                </select></div>
                         </div>
                     </div>
                     <div class="col-50-right">
@@ -33,7 +46,7 @@
                             <div>DNI</div>
                         </div>
                         <div class="col-80">
-                            <div><input type="text" id="num_dni"/><input type="text" id="letra_dni"/></div>
+                            <div><input type="text" id="num_dni"/><input type="text" size="1" id="letra_dni"/></div>
                         </div>
                     </div>
                 </div>
@@ -163,8 +176,8 @@
                         <div>e-mail</div>
                     </div>
                     <div class="col-80">
-                        <div><input type="tel" name="telefono" maxlength="9"/></div>
-                        <div><input type="tel" name="movil" maxlength="9"/></div>
+                        <div><input type="tel" name="telefono"/></div>
+                        <div><input type="tel" name="movil"/></div>
                         <div><input type="email" name="email"/></div>
                     </div>
                 </div>
@@ -174,13 +187,12 @@
                     <input type="checkbox" name="acuerdo_servicios"/> Acepto el acuerdo de servicios, la declaración de privacidad y la declaración de uso de cookies
                 </div>
                 <div id="botones">
-                    <input type="submit" value="Registrar">
+                    <input type="submit" onclick="validaDni()" value="Registrar">
                     <input type="reset" value="Limpiar"> 
                 </div>
             </div>
-     
         </form>
 
-
+        <script type="text/javascript" src="EjercicioJavaScript2.js"></script>
     </body>
 </html>
